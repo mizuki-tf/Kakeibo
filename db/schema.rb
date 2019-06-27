@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_27_113743) do
+ActiveRecord::Schema.define(version: 2019_06_27_134229) do
 
   create_table "fixedcost_values", force: :cascade do |t|
     t.integer "fixedcost_id", null: false
@@ -49,6 +49,7 @@ ActiveRecord::Schema.define(version: 2019_06_27_113743) do
     t.string "email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "password"
   end
 
   create_table "variablecost_values", force: :cascade do |t|
