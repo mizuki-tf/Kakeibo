@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kakeibo</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <% if flash.notice %>
+      <%= flash.notice %>
+    <% end %>
+    <!--共通-->
+    <header>
+      <div class="header-logo">
+        <h1>Kakeibo</h1>
+      </div>
+      <ul class="header-top">
+        <li>
+          <a href="/">Top</a>
+        </li>
+      </ul>
+    </header>
+    
+    <%= yield %>
+  </body>
+</html>

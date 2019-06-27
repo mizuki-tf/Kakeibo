@@ -1,0 +1,26 @@
+/*共通レイアウト*/
+.main{
+  position: absolute;
+  top: 64px;
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+}
+
+/*ヘッダー*/
+header {
+  height : 64px;
+  position: absolute;
+  z-index: 1;
+  width: 80%;
+}
+
+.header-logo {
+  float: left;
+}
+
+.header-top {
+  float: right;
+}
+
+/*トップ*/
