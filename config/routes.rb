@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  get "login" => "users#login_form"
+  post "users/create" => "users#create"
+  get "signup" => "users#new"
+  get "users/index" => "users#index"
+  get "users/:id" => "users#show"
+
   root 'top#index'
   post "income_values/new(/:name)" => "income_values#new"
   post "fixedcost_values/new(/:name)" => "fixedcost_values#new"

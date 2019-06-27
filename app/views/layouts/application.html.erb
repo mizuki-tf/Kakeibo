@@ -19,13 +19,19 @@
       <div class="header-logo">
         <h1>Kakeibo</h1>
       </div>
-      <ul class="header-top">
+      <ul class="header-menus">
         <li>
           <a href="/">Top</a>
         </li>
+        <li>
+          <%= link_to("ユーザー一覧", "/users/index")%>
+        </li>
+        <li>
+          <%= link_to("新規登録", "/signup") %>
+        </li>
       </ul>
     </header>
-    
+
     <%= yield %>
   </body>
 </html>
